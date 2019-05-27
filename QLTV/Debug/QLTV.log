@@ -1,0 +1,17 @@
+﻿  BackEnd.cpp
+c:\users\manma\source\repos\qltv\qltv\backend.cpp(8): warning C4018: '<': signed/unsigned mismatch
+c:\users\manma\source\repos\qltv\qltv\backend.cpp(9): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+c:\users\manma\source\repos\qltv\qltv\backend.cpp(17): warning C4018: '<': signed/unsigned mismatch
+c:\users\manma\source\repos\qltv\qltv\backend.cpp(24): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  CayNhiPhan.cpp
+  ConnectFile.cpp
+c:\users\manma\source\repos\qltv\qltv\connectfile.cpp(46): warning C4018: '<': signed/unsigned mismatch
+c:\users\manma\source\repos\qltv\qltv\connectfile.cpp(49): warning C4018: '<': signed/unsigned mismatch
+  DanhSachLienKetDon.cpp
+  DanhSachLienKetKep.cpp
+  Label.cpp
+  MangConTro.cpp
+  Source.cpp
+c:\users\manma\source\repos\qltv\qltv\source.cpp(25): fatal error C1075: '{': no matching token found
+  Generating Code...
+c:\users\manma\source\repos\qltv\qltv\caynhiphan.cpp(37): warning C4715: 'CayNhiPhan::Check_MADG': not all control paths return a value

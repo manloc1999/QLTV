@@ -1,0 +1,58 @@
+# Project: ThuVien
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = BackEnd.o Button.o CayNhiPhan.o ConnectFile.o console.o DanhSachLienKetDon.o DanhSachLienKetKep.o MainWindow.o MangConTro.o Source.o TextBox.o
+LINKOBJ  = BackEnd.o Button.o CayNhiPhan.o ConnectFile.o console.o DanhSachLienKetDon.o DanhSachLienKetKep.o MainWindow.o MangConTro.o Source.o TextBox.o
+LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
+INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+BIN      = ThuVien.exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+BackEnd.o: BackEnd.cpp
+	$(CPP) -c BackEnd.cpp -o BackEnd.o $(CXXFLAGS)
+
+Button.o: Button.cpp
+	$(CPP) -c Button.cpp -o Button.o $(CXXFLAGS)
+
+CayNhiPhan.o: CayNhiPhan.cpp
+	$(CPP) -c CayNhiPhan.cpp -o CayNhiPhan.o $(CXXFLAGS)
+
+ConnectFile.o: ConnectFile.cpp
+	$(CPP) -c ConnectFile.cpp -o ConnectFile.o $(CXXFLAGS)
+
+console.o: console.cpp
+	$(CPP) -c console.cpp -o console.o $(CXXFLAGS)
+
+DanhSachLienKetDon.o: DanhSachLienKetDon.cpp
+	$(CPP) -c DanhSachLienKetDon.cpp -o DanhSachLienKetDon.o $(CXXFLAGS)
+
+DanhSachLienKetKep.o: DanhSachLienKetKep.cpp
+	$(CPP) -c DanhSachLienKetKep.cpp -o DanhSachLienKetKep.o $(CXXFLAGS)
+
+MainWindow.o: MainWindow.cpp
+	$(CPP) -c MainWindow.cpp -o MainWindow.o $(CXXFLAGS)
+
+MangConTro.o: MangConTro.cpp
+	$(CPP) -c MangConTro.cpp -o MangConTro.o $(CXXFLAGS)
+
+Source.o: Source.cpp
+	$(CPP) -c Source.cpp -o Source.o $(CXXFLAGS)
+
+TextBox.o: TextBox.cpp
+	$(CPP) -c TextBox.cpp -o TextBox.o $(CXXFLAGS)
